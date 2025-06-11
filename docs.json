@@ -30,6 +30,10 @@
               "essentials/settings",
               "essentials/navigation",
               "essentials/sample",
+              "essentials/plan",
+              "essentials/plan-v1",
+              "essentials/plan-v2",
+              "essentials/plan-v3",
               "essentials/reusable-snippets"
             ]
           }

@@ -242,3 +242,35 @@ sequenceDiagram
     PaymentProcessor->>Bank: Transfers funds
     Bank->>Merchant: Credits merchant account
 ```
+
+```mermaid
+
+graph TD
+    %% Nodes
+    A[OfflineReinforcementLearning<br>Learning performant policies from static datasets]:::concept
+    B[HighEpistemicUncertainty<br>Inability to precisely identify the true Markov decision process]:::concept
+    C[ReflectthenPlan<br>Doubly Bayesian offline model-based planning approach]:::approach
+    D[JihwanJeong<br>Jihwan Jeong]:::author
+    E[XiaoyuWang<br>Xiaoyu Wang]:::author
+    F[JingminWang<br>Jingmin Wang]:::author
+    G[ScottSanner<br>Scott Sanner]:::author
+    H[PascalPoupart<br>Pascal Poupart]:::author
+    I[MachineLearning<br>ICML]:::conference
+
+    %% Edges
+    A -->|problem: offline RL struggles with high epistemic uncertainty| B
+    C -->|solution: proposed approach to address high epistemic uncertainty| A
+    D -->|authorship: author of ReflectthenPlan| C
+    E -->|authorship: author of ReflectthenPlan| C
+    F -->|authorship: author of ReflectthenPlan| C
+    G -->|authorship: author of ReflectthenPlan| C
+    H -->|authorship: author of ReflectthenPlan| C
+    C -->|publication: published in ICML| I
+
+    %% Styling
+    classDef concept fill:#f9f,stroke:#333,stroke-width:2px
+    classDef approach fill:#bbf,stroke:#333,stroke-width:2px
+    classDef author fill:#bfb,stroke:#333,stroke-width:2px
+    classDef conference fill:#ffb,stroke:#333,stroke-width:2px
+
+```
